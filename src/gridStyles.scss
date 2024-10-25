@@ -1,0 +1,24 @@
+
+$grid-primary-color: #7e57c2;
+$icon-size: 12px;
+$grid-size: 6px;
+
+@use "~@ag-grid-community/styles" as ag;
+
+@include ag.grid-styles((theme: material,
+    grid-size: $grid-size,
+    icon-size: $icon-size,
+    material-primary-color: $grid-primary-color,
+    material-accent-color: $grid-primary-color,
+  ));
+
+
+// CSS OVERRIDES
+
+.ag-theme-material {
+   font-family: 'IBM Plex Sans';
+}
+
+
+
+
